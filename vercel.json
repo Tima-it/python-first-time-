@@ -5,8 +5,8 @@
       "destination": "/api"
     },
     {
-      "source": "/api/catalog_list_sections",
-      "destination": "api/catalog_list_sections.py"
+      "source": "*.py",
+      "destination": "@now/python"
     }
   ]
 }
