@@ -1,10 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/api"
-    }
-  ],
   "builds": [
     {
       "src": "*.py",
