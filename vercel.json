@@ -1,7 +1,8 @@
 {
-  "functions": {
-    "api/catalog_list_sections.py": {
-      "runtime": "now-py"
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/api"
     }
-  }
+  ]
 }
