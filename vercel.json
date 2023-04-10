@@ -1,8 +1,7 @@
 {
-  "builds": [
-    {
-      "src": "*.py",
-      "use": "@now/python"
+  "functions": {
+    "api/catalog_list_sections.py": {
+      "runtime": "now-py"
     }
-  ]
+  }
 }
