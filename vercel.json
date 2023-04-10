@@ -3,10 +3,12 @@
     {
       "source": "/",
       "destination": "/api"
-    },
+    }
+  ],
+  "builds": [
     {
-      "source": "*.py",
-      "destination": "@now/python"
+      "src": "*.py",
+      "use": "@now/python"
     }
   ]
 }
