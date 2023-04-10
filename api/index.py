@@ -1,10 +1,9 @@
-from http.server import BaseHTTPRequestHandler
+from flask import Flask, Response
 
-class handler(BaseHTTPRequestHandler):
+app = Flask(__name__)
 
-    def do_GET(self):
-        self.send_response(200)
-        self.send_header('Content-type','text/plain')
-        self.end_headers()
-        self.wfile.write('Hello, world!'.encode('utf-8'))
-        return
+
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
+    return Response("<h1>Flask</h1><p>You visited: /%s</p>" % (path), mimetype="text/html")
